@@ -59,7 +59,6 @@ body{
             margin-bottom: 50px;
             padding:0px 30px;
             border-radius: 10px;
-            // border: 1px solid grey;
             box-shadow: 0px 0px 3px 0px grey;
         }
         .head-menu{
@@ -106,6 +105,36 @@ body{
                 }
             }
             
+        }
+        .statices{
+            .grid-3{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                div{
+                    ::after{
+                        content: "";
+                        width: 1px;
+                        background-color: black;
+                        position: absolute;
+                        left: 0px;
+                    }
+                }
+            }
+            .progress{
+                width: 100%;
+                height: 10px;
+                background-color: #eee;
+                border-radius: 10px;
+                margin-top: 20px;
+                z-index: -1;
+                span{
+                    z-index: 99;
+                    width: 80%;
+                    background-color: hsl(176, 50%, 47%);
+                    height: 10px;
+                    border-radius: 10px;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+body > header {
+  background-image: url(images/image-hero-desktop.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  margin: 0px auto;
+  display: block;
+  z-index: -1;
+}
+
+body > header nav {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+body > header nav .container {
+  margin-top: 0px;
+  background-color: transparent;
+  position: absolute;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+body > header nav .container img {
+  position: relative;
+}
+
+body > header nav .container ul {
+  list-style-type: none;
+}
+
+body > header nav .container ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+body > header nav .container ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body .container {
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 80%;
+  margin-top: -80px;
+  z-index: 1;
+  text-align: center;
+}
+
+body .container section {
+  background-color: white;
+  margin: 0px auto auto 50px;
+  width: 90%;
+  margin-bottom: 50px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px 0px grey;
+          box-shadow: 0px 0px 3px 0px grey;
+}
+
+body .container .head-menu {
+  position: relative;
+}
+
+body .container .head-menu .mastercraft {
+  position: absolute;
+  top: -16%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .container .head-menu h1 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  line-height: 3;
+}
+
+body .container .head-menu .flexTwo {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+body .container .head-menu .flexTwo button {
+  font-weight: bold;
+  border: none;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  width: 180px;
+  cursor: pointer;
+  background-color: #3cb4ac;
+}
+
+body .container .head-menu .flexTwo .toggle {
+  background-color: #c5c3c3;
+  position: relative;
+  text-align: center;
+  color: #252525;
+}
+
+body .container .head-menu .flexTwo .toggle img {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+/*# sourceMappingURL=main-page.css.map */

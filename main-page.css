@@ -61,7 +61,7 @@ body > header nav .container ul li a {
 body .container {
   margin: 0px auto;
   max-width: 1440px;
-  width: 80%;
+  width: 70%;
   margin-top: -80px;
   z-index: 1;
   text-align: center;
@@ -134,6 +134,10 @@ body .container .head-menu .flexTwo .toggle img {
   top: 0px;
 }
 
+body .container .statices {
+  padding: 30px;
+}
+
 body .container .statices .grid-3 {
   display: -ms-grid;
   display: grid;
@@ -141,12 +145,28 @@ body .container .statices .grid-3 {
       grid-template-columns: repeat(3, 1fr);
 }
 
-body .container .statices .grid-3 div ::after {
+body .container .statices .grid-3 div {
+  position: relative;
+  padding: 20px;
+}
+
+body .container .statices .grid-3 div::after {
   content: "";
+  height: 60%;
   width: 1px;
-  background-color: black;
+  display: block;
+  background-color: grey;
   position: absolute;
   left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container .statices .grid-3 div span {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
 }
 
 body .container .statices .progress {
@@ -158,11 +178,98 @@ body .container .statices .progress {
   z-index: -1;
 }
 
-body .container .statices .progress span {
+body .container .statices .progress div {
   z-index: 99;
-  width: 80%;
+  width: 89%;
   background-color: #3cb4ac;
   height: 10px;
   border-radius: 10px;
+}
+
+body .container .info {
+  padding: 30px;
+}
+
+body .container .info > span {
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  text-align: left;
+  padding: 0px 0px 30px 0px;
+}
+
+body .container .info p {
+  text-align: left;
+  padding-bottom: 30px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+body .container .info .tiles {
+  padding: 20px;
+}
+
+body .container .info .tiles .tile {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 3px 0px grey;
+          box-shadow: 0px 0px 3px 0px grey;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+body .container .info .tiles .tile header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .container .info .tiles .tile header p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+body .container .info .tiles .tile header span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3cb4ac;
+}
+
+body .container .info .tiles .tile .opitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .info .tiles .tile .opitions button {
+  font-weight: bold;
+  border: none;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  width: 180px;
+  cursor: pointer;
+  background-color: #3cb4ac;
+}
+
+body .container .info .tiles .tile .opitions p {
+  padding-bottom: 0px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+body .container .info .tiles .tile .opitions p span {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
 }
 /*# sourceMappingURL=main-page.css.map */

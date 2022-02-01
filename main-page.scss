@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Public Sans', sans-serif;
 }
 body{
-    font-family: 'Public Sans', sans-serif;
 
     &>header{
         background-image: url(images/image-hero-desktop.jpg);
@@ -209,6 +209,102 @@ body{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .offers{
+        // display: none;
+        width: 70%;
+        margin: 50px auto;
+        position: relative;
+        padding: 30px;
+        box-shadow: 0px 0px 3px 0px grey;
+        max-width:1440px;
+        svg{
+            position:absolute;
+            right: 10px;
+            top: 10px;
+            g{
+                fill: black;
+            }
+        }
+        p{
+            span{
+                font-weight: bold;
+                padding: 20px 0px;
+                display: block;
+                font-size: 25px;
+            }
+        }
+        div{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 3px 0px grey;
+            border-radius: 10px;
+            height: auto;
+            padding: 20px;
+            transition: 1s height linear;
+            
+            input[type="radio"]{
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border: 1px solid grey;
+                border-radius: 50%; 
+                position: relative;
+                cursor: pointer;
+            }
+            input[type="radio"]::before{
+                content: "";
+                width: 70%;
+                height: 70%;
+                background-color: hsl(176, 50%, 47%);
+                display: block;
+                border-radius: 50%;
+                transition: 120ms transform ease-in-out;
+                position: absolute;
+                top: 15%;
+                left: 15%;
+                transform:scale(0);
+            }
+            input[type="radio"]:checked::before{
+                transform: scale(1);
+
+            }
+            label{
+                font-weight: bold;
+                font-size: 20px;
+                display: inline-block;
+                padding: 20px 0px;
+            }
+            .opitions{
+                box-shadow: none;
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                span{
+                    display: inline;
+                }
+                button{
+                    font-weight: bold;
+                    border: none;
+                    padding: 10px;
+                    color: white;
+                    border-radius: 30px;
+                    width: 90px;
+                    cursor: pointer;
+                    background-color: hsl(176, 50%, 47%);
+                }
+                .w-btn{
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
                 }
             }
         }

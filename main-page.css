@@ -271,6 +271,7 @@ body .container .info .tiles .tile .opitions p span {
 }
 
 body .offers {
+  display: none;
   width: 70%;
   margin: 50px auto;
   position: relative;
@@ -388,5 +389,9 @@ body .offers div .opitions .w-btn {
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+.success-modal {
+  display: none;
 }
 /*# sourceMappingURL=main-page.css.map */

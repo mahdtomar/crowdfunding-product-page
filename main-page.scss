@@ -214,7 +214,7 @@ body{
         }
     }
     .offers{
-        // display: none;
+        display: none;
         width: 70%;
         margin: 50px auto;
         position: relative;
@@ -309,4 +309,7 @@ body{
             }
         }
     }
+}
+.success-modal{
+    display: none;
 }

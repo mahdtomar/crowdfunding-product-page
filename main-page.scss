@@ -14,7 +14,7 @@ body{
         margin: 0px auto;
         display: block;
         z-index: -1;
-
+        position: relative;
         nav{
             max-width: 1440px;
             margin: 0px auto;
@@ -221,10 +221,14 @@ body{
         padding: 30px;
         box-shadow: 0px 0px 3px 0px grey;
         max-width:1440px;
+        max-height: 850px;
         svg{
             position:absolute;
             right: 10px;
             top: 10px;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
             g{
                 fill: black;
             }
@@ -280,6 +284,7 @@ body{
                 padding: 20px 0px;
             }
             .opitions{
+                display: none;
                 box-shadow: none;
                 height: auto;
                 padding: 0px;
@@ -310,6 +315,27 @@ body{
         }
     }
     .success-modal{
-        display: none;
+    display: none;
+    }
+    .newOffer{
+        background-color: white;
+        position: fixed;
+        margin-top: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        // top: 10px;
+        z-index: 99;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .black-screen{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        position: fixed;
+        top: 0px;
+        left: 0px;
     }
 }

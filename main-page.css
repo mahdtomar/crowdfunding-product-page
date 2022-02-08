@@ -14,6 +14,7 @@ body > header {
   margin: 0px auto;
   display: block;
   z-index: -1;
+  position: relative;
 }
 
 body > header nav {
@@ -279,12 +280,16 @@ body .offers {
   -webkit-box-shadow: 0px 0px 3px 0px grey;
           box-shadow: 0px 0px 3px 0px grey;
   max-width: 1440px;
+  max-height: 850px;
 }
 
 body .offers svg {
   position: absolute;
   right: 10px;
   top: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
 }
 
 body .offers svg g {
@@ -354,6 +359,7 @@ body .offers div label {
 }
 
 body .offers div .opitions {
+  display: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   height: auto;
@@ -393,5 +399,28 @@ body .offers div .opitions .w-btn {
 
 body .success-modal {
   display: none;
+}
+
+body .newOffer {
+  background-color: white;
+  position: fixed;
+  margin-top: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body .black-screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 /*# sourceMappingURL=main-page.css.map */

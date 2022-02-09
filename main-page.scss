@@ -110,7 +110,7 @@ body{
             padding: 30px;
             .grid-3{
                 display: grid;
-                grid-template-columns: repeat(3,1fr);
+                grid-template-columns:1fr 1fr 1fr;
                 div{
                     position: relative;
                     padding: 20px;
@@ -189,6 +189,7 @@ body{
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        
                         button{
                             font-weight: bold;
                             border: none;
@@ -249,7 +250,7 @@ body{
             height: auto;
             padding: 20px;
             transition: 1s height linear;
-            
+            border: 2px solid transparent;
             input[type="radio"]{
                 appearance: none;
                 width: 20px;
@@ -288,6 +289,7 @@ body{
                 box-shadow: none;
                 height: auto;
                 padding: 0px;
+                max-height: 0px;
                 margin: 0px;
                 p{
                     display: flex;
@@ -313,6 +315,10 @@ body{
                 }
             }
         }
+        .selected{
+            box-shadow: none;
+            border: 2px solid hsl(176, 50%, 47%);
+    }
     }
     .success-modal{
     display: none;
@@ -338,4 +344,5 @@ body{
         top: 0px;
         left: 0px;
     }
+
 }

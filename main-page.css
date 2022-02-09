@@ -139,8 +139,8 @@ body .container .statices {
 body .container .statices .grid-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 body .container .statices .grid-3 div {
@@ -313,6 +313,7 @@ body .offers div {
   padding: 20px;
   -webkit-transition: 1s height linear;
   transition: 1s height linear;
+  border: 2px solid transparent;
 }
 
 body .offers div input[type="radio"] {
@@ -364,6 +365,7 @@ body .offers div .opitions {
           box-shadow: none;
   height: auto;
   padding: 0px;
+  max-height: 0px;
   margin: 0px;
 }
 
@@ -395,6 +397,12 @@ body .offers div .opitions .w-btn {
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+body .offers .selected {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #3cb4ac;
 }
 
 body .success-modal {

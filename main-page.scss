@@ -236,10 +236,13 @@ body{
         }
         p{
             span{
-                font-weight: bold;
-                padding: 20px 0px;
+                font-weight: 100;
+                padding: 10px 0px;
                 display: block;
-                font-size: 25px;
+                font-size: 15px;
+                :no-button{
+                    font-weight: bold;
+                }
             }
         }
         div{
@@ -293,6 +296,7 @@ body{
                 margin: 0px;
                 p{
                     display: flex;
+                    align-items: center;
                     justify-content: space-between;
                 }
                 span{
@@ -307,6 +311,10 @@ body{
                     width: 90px;
                     cursor: pointer;
                     background-color: hsl(176, 50%, 47%);
+                }
+                hr{
+                    margin:8px auto;
+                    height: 1px;
                 }
                 .w-btn{
                     background-color: white;

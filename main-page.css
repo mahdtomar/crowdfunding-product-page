@@ -297,10 +297,14 @@ body .offers svg g {
 }
 
 body .offers p span {
-  font-weight: bold;
-  padding: 20px 0px;
+  font-weight: 100;
+  padding: 10px 0px;
   display: block;
-  font-size: 25px;
+  font-size: 15px;
+}
+
+body .offers p span :no-button {
+  font-weight: bold;
 }
 
 body .offers div {
@@ -373,6 +377,9 @@ body .offers div .opitions p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -391,6 +398,11 @@ body .offers div .opitions button {
   width: 90px;
   cursor: pointer;
   background-color: #3cb4ac;
+}
+
+body .offers div .opitions hr {
+  margin: 8px auto;
+  height: 1px;
 }
 
 body .offers div .opitions .w-btn {

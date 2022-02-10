@@ -10,6 +10,7 @@ let mse = document.getElementById("mse");
 let norm = document.getElementById("norm");
 let myRadios = [bsp, bes, mse, norm];
 
+
 // HTML
 backScreen.appendChild(BS)
 backScreen.setAttribute("onclick", "closemenu()");
@@ -44,7 +45,7 @@ function highlight(e) {
     }else{
       myRadios[i].parentElement.classList.remove("selected");
       i<3?myRadios[i].parentElement.children[4].style.display = "none":""
-      i<3?myRadios[i].parentElement.children[4].style.maxHeight = "none":""
+      i<3?myRadios[i].parentElement.children[4].style.maxHeight = "0":""
     }
   }
 }

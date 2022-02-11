@@ -39,12 +39,16 @@ function highlight(e) {
   for(i=0;i<myRadios.length;i++){
     if (myRadios[i] == e) {
       myRadios[i].parentElement.classList.add("selected")
+
       i<3? myRadios[i].parentElement.children[4].style.display = "block":"";
+
       i<3? myRadios[i].parentElement.children[4].style.maxHeight = "300px":"";
       // console.log(myRadios[i])
     }else{
       myRadios[i].parentElement.classList.remove("selected");
+
       i<3?myRadios[i].parentElement.children[4].style.display = "none":""
+
       i<3?myRadios[i].parentElement.children[4].style.maxHeight = "0":""
     }
   }
@@ -65,3 +69,5 @@ function Close_thanks(){
   tyMsg.style.display = "none"
 
 }
+backScreen.addEventListener('click', Close_thanks)
+backScreen.addEventListener('click', closemenu)

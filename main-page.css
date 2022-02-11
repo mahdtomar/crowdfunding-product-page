@@ -438,9 +438,53 @@ body .newOffer {
 body .black-screen {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 5;
+}
+
+body .success-modal {
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+body .success-modal span {
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+body .success-modal p {
+  line-height: 2;
+}
+
+body .success-modal svg {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin: 30px auto;
+}
+
+body .success-modal button {
+  margin: 30px auto;
+  font-weight: bold;
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #3cb4ac;
 }
 /*# sourceMappingURL=main-page.css.map */

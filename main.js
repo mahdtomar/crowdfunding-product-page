@@ -9,7 +9,7 @@ let bes = document.getElementById("bes");
 let mse = document.getElementById("mse");
 let norm = document.getElementById("norm");
 let myRadios = [bsp, bes, mse, norm];
-
+let tyMsg = document.querySelector(".success-modal")
 
 // HTML
 backScreen.appendChild(BS)
@@ -48,4 +48,20 @@ function highlight(e) {
       i<3?myRadios[i].parentElement.children[4].style.maxHeight = "0":""
     }
   }
+}
+
+// for(i=0; i<myRadios.length;i++){
+//   myRadios[i]==bsp?console.log("bsp is found"):""
+// }
+function thanks() {
+  closemenu();
+  backScreen.classList.add("black-screen")
+  tyMsg.style.display = "block"
+}
+
+function Close_thanks(){
+  closemenu();
+  backScreen.classList.remove("black-screen")
+  tyMsg.style.display = "none"
+
 }

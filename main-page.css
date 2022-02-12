@@ -3,7 +3,7 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 body > header {
@@ -118,12 +118,12 @@ body .container .head-menu .flexTwo button {
   color: white;
   border-radius: 30px;
   width: 180px;
-  cursor: pointer;
   background-color: #3cb4ac;
   z-index: 2;
 }
 
 body .container .head-menu .flexTwo button:hover {
+  cursor: pointer;
   background-color: #2d8680;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
@@ -439,11 +439,11 @@ body .offers div .opitions button {
   color: white;
   border-radius: 30px;
   width: 90px;
-  cursor: pointer;
   background-color: #3cb4ac;
 }
 
 body .offers div .opitions button:hover {
+  cursor: pointer;
   background-color: #2d8680;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
@@ -458,6 +458,10 @@ body .offers div .opitions .w-btn {
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+body .offers div .opitions .w-btn:hover {
+  cursor: default;
 }
 
 body .offers .selected {

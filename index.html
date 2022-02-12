@@ -148,15 +148,28 @@
           Mastercraft Bamboo Monitor Riser out in the world?
         </p>
         <div>
-          <input type="radio" name="support" id="norm"  onchange="highlight(norm)" />
+          <div class="flex-box">
+            <label for="">
+              <input type="radio" name="support" id="norm"  onchange="highlight(norm)" />
+              Pledge with no reward
+            </label>
+            <span></span>
+          </div>
 
-          <label for="">Pledge with no reward</label>
-          <span></span>
           <p>
             Choose to support us without a reward if you simply believe in our
             project. As a backer, you will be signed up to receive product
             updates via email.
           </p>
+          <div class="opitions">
+            <hr>
+            <p>
+              <span> Enter your pledge </span>
+              <span>
+                <button onclick="thanks()" >Continue</button>
+              </span>
+            </p>
+          </div>
         </div>
         <!-- Selected pledge start -->
         <div>
@@ -187,7 +200,7 @@
         <div>
           <!-- Selected pledge start -->
           <div class="flex-box">
-
+            
             <label for="">
               <input type="radio" name="support" id="bes"  onchange="highlight(bes)"/>
               <span>Black Edition Stand <span class="colored-span">Pledge $75 or more</span></span>

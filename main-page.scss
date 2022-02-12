@@ -1,12 +1,11 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Public Sans', sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
-body{
-
-    &>header{
+body {
+    & > header {
         background-image: url(images/image-hero-desktop.jpg);
         background-size: cover;
         height: 500px;
@@ -15,13 +14,13 @@ body{
         display: block;
         z-index: -1;
         position: relative;
-        nav{
+        nav {
             max-width: 1440px;
             margin: 0px auto;
-            .container{
+            .container {
                 margin-top: 0px;
                 background-color: transparent;
-                img{
+                img {
                     position: relative;
                 }
                 position: absolute;
@@ -30,17 +29,17 @@ body{
                 justify-content: space-between;
                 width: 100%;
                 padding: 20px 30px;
-                ul{
+                ul {
                     list-style-type: none;
-                    li{
-                        &:hover{
+                    li {
+                        &:hover {
                             cursor: pointer;
                         }
                         display: inline-block;
                         padding: 0px 10px;
-                        a{
+                        a {
                             color: white;
-                            font-weight:bold ;
+                            font-weight: bold;
                             text-decoration: none;
                         }
                     }
@@ -48,66 +47,66 @@ body{
             }
         }
     }
-    .container{
+    .container {
         margin: 0px auto;
         max-width: 1440px;
         width: 70%;
         margin-top: -80px;
         z-index: 1;
         text-align: center;
-        section{
+        section {
             background-color: white;
             margin: 0px auto auto 50px;
             width: 90%;
             margin-bottom: 50px;
-            padding:0px 30px;
+            padding: 0px 30px;
             border-radius: 10px;
             box-shadow: 0px 0px 3px 0px grey;
         }
-        .head-menu{
+        .head-menu {
             position: relative;
-            .mastercraft{
+            .mastercraft {
                 position: absolute;
                 top: -16%;
                 left: 50%;
                 transform: translateX(-50%);
             }
-            h1{
-                color:black;
+            h1 {
+                color: black;
                 font-weight: bold;
                 text-align: center;
                 font-size: 30px;
                 line-height: 3;
             }
-            .flexTwo{
+            .flexTwo {
                 margin: 20px;
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 20px;
-                button{
+                button {
                     font-weight: bold;
                     border: none;
                     padding: 20px;
                     color: white;
                     border-radius: 30px;
                     width: 180px;
-                    cursor: pointer;
                     background-color: hsl(176, 50%, 47%);
                     z-index: 2;
-                    &:hover{
+                    &:hover {
+                        cursor: pointer;
                         background-color: hsl(176, 50%, 35%);
                         transition: background-color 0.2s linear;
                     }
                 }
-                .toggle{
+                .toggle {
                     background-color: rgb(197, 195, 195);
                     position: relative;
                     text-align: center;
                     color: rgb(37, 37, 37);
-                    &:hover{
+                    &:hover {
                         background-color: rgb(197, 195, 195);
                     }
-                    img{
+                    img {
                         position: absolute;
                         height: 100%;
                         left: 0px;
@@ -115,18 +114,17 @@ body{
                     }
                 }
             }
-            
         }
-        .statices{
+        .statices {
             padding: 30px;
-            .grid-3{
+            .grid-3 {
                 display: grid;
-                grid-template-columns:1fr 1fr 1fr;
-                div{
+                grid-template-columns: 1fr 1fr 1fr;
+                div {
                     position: relative;
                     padding: 20px;
-                    
-                    &::after{
+
+                    &::after {
                         content: "";
                         height: 60%;
                         width: 1px;
@@ -134,25 +132,24 @@ body{
                         background-color: grey;
                         position: absolute;
                         left: 0px;
-                        top:50%;
+                        top: 50%;
                         transform: translateY(-50%);
                     }
-                    span{
+                    span {
                         font-size: 40px;
                         font-weight: bold;
                         display: block;
                     }
-
                 }
             }
-            .progress{
+            .progress {
                 width: 100%;
                 height: 10px;
                 background-color: #eee;
                 border-radius: 10px;
                 margin-top: 20px;
                 z-index: -1;
-                div{
+                div {
                     z-index: 99;
                     width: 89%;
                     background-color: hsl(176, 50%, 47%);
@@ -161,47 +158,47 @@ body{
                 }
             }
         }
-        .info{
+        .info {
             padding: 30px;
-            &>span{
+            & > span {
                 font-weight: bold;
                 font-size: 25px;
                 display: block;
                 text-align: left;
                 padding: 0px 0px 30px 0px;
             }
-            p{
+            p {
                 text-align: left;
                 padding-bottom: 30px;
                 color: rgba($color: #000000, $alpha: 0.9);
             }
-            .tiles{
-                padding:20px;
-                .tile{
-                    padding:20px;
+            .tiles {
+                padding: 20px;
+                .tile {
+                    padding: 20px;
                     box-shadow: 0px 0px 3px 0px grey;
                     margin-bottom: 30px;
-                    border-radius:10px;
-                    header{
+                    border-radius: 10px;
+                    header {
                         display: flex;
                         justify-content: space-between;
                         align-items: baseline;
-                        p{
+                        p {
                             font-weight: bold;
                             font-size: 25px;
                         }
-                        span{
+                        span {
                             font-weight: bold;
                             font-size: 20px;
                             color: hsl(176, 50%, 47%);
                         }
                     }
-                    .opitions{
+                    .opitions {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        
-                        button{
+
+                        button {
                             font-weight: bold;
                             border: none;
                             padding: 20px;
@@ -210,15 +207,15 @@ body{
                             width: 180px;
                             cursor: pointer;
                             background-color: hsl(176, 50%, 47%);
-                            &:hover{
+                            &:hover {
                                 background-color: hsl(176, 50%, 35%);
                                 transition: background-color 0.2s linear;
                             }
                         }
-                        p{
+                        p {
                             padding-bottom: 0px;
                             color: rgba($color: #000000, $alpha: 0.8);
-                            span{
+                            span {
                                 font-weight: bold;
                                 font-size: 30px;
                                 color: black;
@@ -229,38 +226,38 @@ body{
             }
         }
     }
-    .offers{
+    .offers {
         display: none;
         width: 70%;
         margin: 50px auto;
         position: relative;
         padding: 30px;
         box-shadow: 0px 0px 3px 0px grey;
-        max-width:1440px;
+        max-width: 1440px;
         max-height: 850px;
-        svg{
-            position:absolute;
+        svg {
+            position: absolute;
             right: 10px;
             top: 10px;
             height: 20px;
             width: 20px;
             cursor: pointer;
-            g{
+            g {
                 fill: black;
             }
         }
-        p{
-            span{
+        p {
+            span {
                 font-weight: 100;
                 padding: 10px 0px;
                 display: block;
                 font-size: 15px;
-                :no-button{
+                :no-button {
                     font-weight: bold;
                 }
             }
         }
-        div{
+        div {
             margin-top: 20px;
             margin-bottom: 20px;
             box-shadow: 0px 0px 3px 0px grey;
@@ -269,7 +266,7 @@ body{
             padding: 20px;
             transition: 1s height linear;
             border: 2px solid transparent;
-            .flex-box{
+            .flex-box {
                 box-shadow: none;
                 padding: 0px;
                 border: none;
@@ -277,17 +274,17 @@ body{
                 align-items: center;
                 justify-content: space-between;
             }
-            input[type="radio"]{
+            input[type="radio"] {
                 appearance: none;
                 width: 20px;
                 height: 20px;
                 background-color: white;
                 border: 1px solid grey;
-                border-radius: 50%; 
+                border-radius: 50%;
                 position: relative;
                 cursor: pointer;
             }
-            input[type="radio"]::before{
+            input[type="radio"]::before {
                 content: "";
                 width: 70%;
                 height: 70%;
@@ -298,86 +295,88 @@ body{
                 position: absolute;
                 top: 15%;
                 left: 15%;
-                transform:scale(0);
+                transform: scale(0);
             }
-            input[type="radio"]:checked::before{
+            input[type="radio"]:checked::before {
                 transform: scale(1);
-
             }
 
-            label{
+            label {
                 font-weight: bold;
                 font-size: 20px;
                 display: inline-block;
                 padding: 20px 0px;
                 width: 80%;
-                .colored-span{
+                .colored-span {
                     color: hsl(176, 50%, 47%);
                     margin-left: 10px;
                 }
             }
-            .opitions{
+            .opitions {
                 display: none;
                 box-shadow: none;
                 height: auto;
                 padding: 0px;
                 max-height: 0px;
                 margin: 0px;
-                p{
+                p {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                 }
-                span{
+                span {
                     display: inline;
                 }
-                button{
+                button {
                     font-weight: bold;
                     border: none;
                     padding: 10px;
                     color: white;
                     border-radius: 30px;
                     width: 90px;
-                    cursor: pointer;
                     background-color: hsl(176, 50%, 47%);
-                    &:hover{
+                    &:hover {
+                        cursor: pointer;
                         background-color: hsl(176, 50%, 35%);
                         transition: background-color 0.2s linear;
                     }
                 }
-                hr{
-                    margin:8px auto;
+                hr {
+                    margin: 8px auto;
                     height: 1px;
                 }
-                .w-btn{
+                .w-btn {
                     background-color: white;
                     color: black;
                     border: 1px solid black;
+                    &:hover {
+                        cursor: default;
+                    }
                 }
             }
         }
-        .selected{
+        .selected {
             box-shadow: none;
             border: 2px solid hsl(176, 50%, 47%);
+        }
     }
+    .success-modal {
+        display: none;
     }
-    .success-modal{
-    display: none;
-    }
-    .newOffer{
+    .newOffer {
         background-color: white;
         position: fixed;
         margin-top: 5px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         // top: 10px;
         z-index: 99;
         height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    .black-screen{
+    .black-screen {
         width: 100%;
         height: 100%;
         background-color: rgba($color: #000000, $alpha: 0.3);
@@ -386,32 +385,32 @@ body{
         left: 0px;
         z-index: 5;
     }
-    .success-modal{
+    .success-modal {
         width: 40%;
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         background-color: white;
         text-align: center;
         padding: 20px;
         z-index: 10;
         border-radius: 10px;
-        span{
+        span {
             display: block;
             width: 100%;
             margin: 30px auto;
             font-weight: bold;
             font-size: 25px;
         }
-        p{
+        p {
             line-height: 2;
         }
-        svg{
+        svg {
             transform: scale(1.5);
             margin: 30px auto;
         }
-        button{
+        button {
             margin: 30px auto;
             font-weight: bold;
             border: none;
@@ -420,7 +419,7 @@ body{
             border-radius: 30px;
             cursor: pointer;
             background-color: hsl(176, 50%, 47%);
-            &:hover{
+            &:hover {
                 background-color: hsl(176, 50%, 35%);
                 transition: background-color 0.2s linear;
             }

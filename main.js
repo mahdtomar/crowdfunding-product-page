@@ -34,22 +34,16 @@ function selectOne() {
   document.body.style.overflow = "hidden";
   backScreen.classList.add("black-screen");
 }
-
 function highlight(e) {
   for(i=0;i<myRadios.length;i++){
     if (myRadios[i] == e) {
-      myRadios[i].parentElement.classList.add("selected")
-
-      i<3? myRadios[i].parentElement.children[4].style.display = "block":"";
-
-      i<3? myRadios[i].parentElement.children[4].style.maxHeight = "300px":"";
-      // console.log(myRadios[i])
+        myRadios[i].parentElement.parentElement.parentElement.classList.add("selected")
+        myRadios[i].parentElement.parentElement.parentElement.children[2].style.display = "block";
+        myRadios[i].parentElement.parentElement.parentElement.children[2].style.maxHeight = "300px";
     }else{
-      myRadios[i].parentElement.classList.remove("selected");
-
-      i<3?myRadios[i].parentElement.children[4].style.display = "none":""
-
-      i<3?myRadios[i].parentElement.children[4].style.maxHeight = "0":""
+      myRadios[i].parentElement.parentElement.parentElement.classList.remove("selected");
+      myRadios[i].parentElement.parentElement.parentElement.children[2].style.display = "none";
+      myRadios[i].parentElement.parentElement.parentElement.children[2].style.maxHeight = "0";
     }
   }
 }

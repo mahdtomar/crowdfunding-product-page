@@ -50,6 +50,10 @@ body > header nav .container ul li {
   padding: 0px 10px;
 }
 
+body > header nav .container ul li:hover {
+  cursor: pointer;
+}
+
 body > header nav .container ul li a {
   color: white;
   font-weight: bold;
@@ -116,6 +120,13 @@ body .container .head-menu .flexTwo button {
   width: 180px;
   cursor: pointer;
   background-color: #3cb4ac;
+  z-index: 2;
+}
+
+body .container .head-menu .flexTwo button:hover {
+  background-color: #2d8680;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 
 body .container .head-menu .flexTwo .toggle {
@@ -123,6 +134,10 @@ body .container .head-menu .flexTwo .toggle {
   position: relative;
   text-align: center;
   color: #252525;
+}
+
+body .container .head-menu .flexTwo .toggle:hover {
+  background-color: #c5c3c3;
 }
 
 body .container .head-menu .flexTwo .toggle img {
@@ -260,6 +275,12 @@ body .container .info .tiles .tile .opitions button {
   background-color: #3cb4ac;
 }
 
+body .container .info .tiles .tile .opitions button:hover {
+  background-color: #2d8680;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
 body .container .info .tiles .tile .opitions p {
   padding-bottom: 0px;
   color: rgba(0, 0, 0, 0.8);
@@ -320,6 +341,22 @@ body .offers div {
   border: 2px solid transparent;
 }
 
+body .offers div .flex-box {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 body .offers div input[type="radio"] {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -361,6 +398,12 @@ body .offers div label {
   font-size: 20px;
   display: inline-block;
   padding: 20px 0px;
+  width: 80%;
+}
+
+body .offers div label .colored-span {
+  color: #3cb4ac;
+  margin-left: 10px;
 }
 
 body .offers div .opitions {
@@ -398,6 +441,12 @@ body .offers div .opitions button {
   width: 90px;
   cursor: pointer;
   background-color: #3cb4ac;
+}
+
+body .offers div .opitions button:hover {
+  background-color: #2d8680;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 
 body .offers div .opitions hr {
@@ -486,5 +535,11 @@ body .success-modal button {
   border-radius: 30px;
   cursor: pointer;
   background-color: #3cb4ac;
+}
+
+body .success-modal button:hover {
+  background-color: #2d8680;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 /*# sourceMappingURL=main-page.css.map */

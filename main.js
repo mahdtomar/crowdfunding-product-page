@@ -32,7 +32,7 @@ function selectOne() {
   selectionMenu.style.display = "block";
   selectionMenu.classList.add("newOffer");
   document.body.style.overflow = "hidden";
-  backScreen.classList.add("black-screen")
+  backScreen.classList.add("black-screen");
 }
 
 function highlight(e) {

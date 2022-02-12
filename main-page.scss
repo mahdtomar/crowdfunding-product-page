@@ -33,6 +33,9 @@ body{
                 ul{
                     list-style-type: none;
                     li{
+                        &:hover{
+                            cursor: pointer;
+                        }
                         display: inline-block;
                         padding: 0px 10px;
                         a{
@@ -90,12 +93,20 @@ body{
                     width: 180px;
                     cursor: pointer;
                     background-color: hsl(176, 50%, 47%);
+                    z-index: 2;
+                    &:hover{
+                        background-color: hsl(176, 50%, 35%);
+                        transition: background-color 0.2s linear;
+                    }
                 }
                 .toggle{
                     background-color: rgb(197, 195, 195);
                     position: relative;
                     text-align: center;
                     color: rgb(37, 37, 37);
+                    &:hover{
+                        background-color: rgb(197, 195, 195);
+                    }
                     img{
                         position: absolute;
                         height: 100%;
@@ -199,6 +210,10 @@ body{
                             width: 180px;
                             cursor: pointer;
                             background-color: hsl(176, 50%, 47%);
+                            &:hover{
+                                background-color: hsl(176, 50%, 35%);
+                                transition: background-color 0.2s linear;
+                            }
                         }
                         p{
                             padding-bottom: 0px;
@@ -254,6 +269,14 @@ body{
             padding: 20px;
             transition: 1s height linear;
             border: 2px solid transparent;
+            .flex-box{
+                box-shadow: none;
+                padding: 0px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
             input[type="radio"]{
                 appearance: none;
                 width: 20px;
@@ -281,11 +304,17 @@ body{
                 transform: scale(1);
 
             }
+
             label{
                 font-weight: bold;
                 font-size: 20px;
                 display: inline-block;
                 padding: 20px 0px;
+                width: 80%;
+                .colored-span{
+                    color: hsl(176, 50%, 47%);
+                    margin-left: 10px;
+                }
             }
             .opitions{
                 display: none;
@@ -311,6 +340,10 @@ body{
                     width: 90px;
                     cursor: pointer;
                     background-color: hsl(176, 50%, 47%);
+                    &:hover{
+                        background-color: hsl(176, 50%, 35%);
+                        transition: background-color 0.2s linear;
+                    }
                 }
                 hr{
                     margin:8px auto;
@@ -387,6 +420,10 @@ body{
             border-radius: 30px;
             cursor: pointer;
             background-color: hsl(176, 50%, 47%);
+            &:hover{
+                background-color: hsl(176, 50%, 35%);
+                transition: background-color 0.2s linear;
+            }
         }
     }
 }

@@ -212,6 +212,13 @@ body {
                                 transition: background-color 0.2s linear;
                             }
                         }
+                        .unclickable{
+                            background-color: grey;
+                            &:hover {
+                                background-color:rgb(107, 106, 106);
+                                transition: background-color 0.2s linear;
+                            }
+                        }
                         p {
                             padding-bottom: 0px;
                             color: rgba($color: #000000, $alpha: 0.8);
@@ -341,6 +348,7 @@ body {
                         transition: background-color 0.2s linear;
                     }
                 }
+                
                 hr {
                     margin: 8px auto;
                     height: 1px;

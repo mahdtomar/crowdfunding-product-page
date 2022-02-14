@@ -133,7 +133,7 @@
             </p>
             <div class="opitions">
               <p><span>0</span> left</p>
-              <button onclick="selectOne(5)">Out of Stock</button>
+              <button class="unclickable" onclick="return false;">Out of Stock</button>
             </div>
           </div>
         </div>
@@ -227,7 +227,7 @@
         <div>
           <div class="flex-box">
             <label for="">
-              <input type="radio" name="support" id="mse"  onchange="highlight(mse)"/>
+              <input type="radio" name="support" id="mse" onclick="return false;"/>
               <span>Mahogany Special Edition <span class="colored-span">Pledge $200 or more</span></span>
             </label>
             <span>0 <span>left</span></span>

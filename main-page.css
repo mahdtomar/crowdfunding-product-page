@@ -281,6 +281,16 @@ body .container .info .tiles .tile .opitions button:hover {
   transition: background-color 0.2s linear;
 }
 
+body .container .info .tiles .tile .opitions .unclickable {
+  background-color: grey;
+}
+
+body .container .info .tiles .tile .opitions .unclickable:hover {
+  background-color: #6b6a6a;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
 body .container .info .tiles .tile .opitions p {
   padding-bottom: 0px;
   color: rgba(0, 0, 0, 0.8);

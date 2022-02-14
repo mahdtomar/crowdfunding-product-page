@@ -403,6 +403,12 @@ body .offers div input[type="radio"]:checked::before {
           transform: scale(1);
 }
 
+body .offers div input[type="radio"].remove::before {
+  background-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 body .offers div label {
   font-weight: bold;
   font-size: 20px;

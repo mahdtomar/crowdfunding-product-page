@@ -26,7 +26,7 @@ function closemenu() {
   // HTML
   // CSS
   backScreen.classList.remove("black-screen")
-  selectionMenu.style.display = "none";
+  // selectionMenu.style.display = "none";
   for(i=0;i<myRadios.length;i++){
     myRadios[i].parentElement.parentElement.parentElement.classList.remove("selected")
     myRadios[i].classList.add("remove")
@@ -47,7 +47,7 @@ function selectOne() {
   for(i=0;i<myRadios.length;i++){
 
   }
-  selectionMenu.style.display = "block";
+  // selectionMenu.style.display = "block";
   selectionMenu.classList.add("newOffer");
   document.body.style.overflow = "hidden";
   backScreen.classList.add("black-screen");

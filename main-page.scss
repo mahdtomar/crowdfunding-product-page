@@ -234,14 +234,20 @@ body {
         }
     }
     .offers {
-        display: none;
-        width: 70%;
+        width: 69%;
+        height: 94%;
         margin: 50px auto;
-        position: relative;
+        position: fixed;
         padding: 30px;
         box-shadow: 0px 0px 3px 0px grey;
+        border-radius: 10px;
         max-width: 1440px;
         max-height: 850px;
+        opacity: 0;
+        transition: opacity 10ms linear;
+        transition: width 100ms linear;
+        transition: height 100ms linear;
+        z-index: -1;
         svg {
             position: absolute;
             right: 10px;
@@ -255,10 +261,10 @@ body {
         }
         p {
             span {
-                font-weight: 100;
+                font-weight: bold;
                 padding: 10px 0px;
                 display: block;
-                font-size: 15px;
+                font-size: 35px;
                 :no-button {
                     font-weight: bold;
                 }
@@ -337,6 +343,8 @@ body {
                 }
                 span {
                     display: inline;
+                    font-weight: 100;
+                    font-size: 15px;
                 }
                 button {
                     font-weight: bold;
@@ -379,14 +387,26 @@ body {
         background-color: white;
         position: fixed;
         margin-top: 5px;
+        margin-bottom: 5px;
+        width: 70%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         // top: 10px;
         z-index: 99;
-        height: 100%;
+        opacity: 1;
+        height: 95%;
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+    .offers::-webkit-scrollbar {
+        width: 15px;
+    }.offers::-webkit-scrollbar-track {
+        background-color: #c5c3c3;
+    }.offers::-webkit-scrollbar-thumb {
+        width: 15px;
+        border-radius: 5px;
+        background-color: hsl(176, 50%, 47%);
     }
     .black-screen {
         width: 100%;

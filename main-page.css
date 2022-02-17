@@ -303,15 +303,24 @@ body .container .info .tiles .tile .opitions p span {
 }
 
 body .offers {
-  display: none;
-  width: 70%;
+  width: 69%;
+  height: 94%;
   margin: 50px auto;
-  position: relative;
+  position: fixed;
   padding: 30px;
   -webkit-box-shadow: 0px 0px 3px 0px grey;
           box-shadow: 0px 0px 3px 0px grey;
+  border-radius: 10px;
   max-width: 1440px;
   max-height: 850px;
+  opacity: 0;
+  -webkit-transition: opacity 10ms linear;
+  transition: opacity 10ms linear;
+  -webkit-transition: width 100ms linear;
+  transition: width 100ms linear;
+  -webkit-transition: height 100ms linear;
+  transition: height 100ms linear;
+  z-index: -1;
 }
 
 body .offers svg {
@@ -328,10 +337,10 @@ body .offers svg g {
 }
 
 body .offers p span {
-  font-weight: 100;
+  font-weight: bold;
   padding: 10px 0px;
   display: block;
-  font-size: 15px;
+  font-size: 35px;
 }
 
 body .offers p span :no-button {
@@ -446,6 +455,8 @@ body .offers div .opitions p {
 
 body .offers div .opitions span {
   display: inline;
+  font-weight: 100;
+  font-size: 15px;
 }
 
 body .offers div .opitions button {
@@ -494,14 +505,31 @@ body .newOffer {
   background-color: white;
   position: fixed;
   margin-top: 5px;
+  margin-bottom: 5px;
+  width: 70%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 99;
-  height: 100%;
+  opacity: 1;
+  height: 95%;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+body .offers::-webkit-scrollbar {
+  width: 15px;
+}
+
+body .offers::-webkit-scrollbar-track {
+  background-color: #c5c3c3;
+}
+
+body .offers::-webkit-scrollbar-thumb {
+  width: 15px;
+  border-radius: 5px;
+  background-color: #3cb4ac;
 }
 
 body .black-screen {

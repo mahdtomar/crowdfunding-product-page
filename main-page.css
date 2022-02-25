@@ -71,7 +71,7 @@ body .container {
 
 body .container section {
   background-color: white;
-  margin: 0px auto auto 50px;
+  margin: 0px auto 50px auto;
   width: 90%;
   margin-bottom: 50px;
   padding: 0px 30px;
@@ -180,6 +180,10 @@ body .container .statices .grid-3 div span {
   font-size: 40px;
   font-weight: bold;
   display: block;
+}
+
+body .container .statices .grid-3 .nopcafter::after {
+  height: 0px;
 }
 
 body .container .statices .progress {
@@ -589,5 +593,72 @@ body .success-modal button:hover {
   background-color: #2d8680;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+}
+
+@media (max-width: 770px) {
+  body .success-modal {
+    width: 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  body .success-modal {
+    width: 60%;
+  }
+  body .container {
+    width: 95%;
+  }
+  body .container .info .tiles {
+    padding: 0px;
+  }
+  body .container .info .tiles .tile header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 20px;
+  }
+  body .container .info .tiles .tile header p, body .container .info .tiles .tile header span {
+    text-align: left;
+    font-size: 20px;
+  }
+  body .container .info .tiles .tile header p {
+    padding-bottom: 0px;
+  }
+  body .container .info .tiles .tile .opitions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .container .info .tiles .tile .opitions button {
+    width: 130px;
+    padding: 15px;
+  }
+  body .container .statices .grid-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container .statices .grid-3 div::after {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  body .container .statices .grid-3 .nophoneafter::after {
+    height: 0px;
+  }
+  body .container .statices .grid-3 .nopcafter::after {
+    height: 60%;
+  }
 }
 /*# sourceMappingURL=main-page.css.map */

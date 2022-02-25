@@ -140,6 +140,11 @@ body {
                         font-weight: bold;
                         display: block;
                     }
+                    // .no-after::after{
+                    //     content: "";
+                    //     height: 0px;
+                    //     width: 0px;
+                    // }
                 }
                 .nopcafter::after{
                     height: 0px;
@@ -527,3 +532,23 @@ body {
         }  
     }
 }
+
+// @media (max-width: 768px) {
+//     body{
+        
+//     }
+// }
+// @media (max-width: 425px) {
+//     body{
+//         .container{
+//             width: 95%;
+//             .statices{
+//                 .grid-3{
+//                     display: grid;
+//                     grid-template-columns: 1fr;
+//                     grid-template-rows: 1fr 1fr 1fr;
+//                 }
+//             }
+//         }
+//     }
+// }

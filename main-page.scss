@@ -90,8 +90,10 @@ body {
                     color: white;
                     border-radius: 30px;
                     width: 180px;
-                    background-color: hsl(176, 50%, 47%);
+                    background-color: #3cb4ac;
                     z-index: 2;
+                    /* min-width: 135px; */
+                    white-space: nowrap;
                     &:hover {
                         cursor: pointer;
                         background-color: hsl(176, 50%, 35%);
@@ -467,11 +469,71 @@ body {
             }
         }
     }
-    @media (max-width: 770px) {
-        .success-modal {
-            width: 60%;
-        }
-    }    
+        @media (max-width: 770px) {
+            .container{
+                width: 95%;
+                .success-modal {
+                    width: 85%;
+                }
+                .head-menu{
+                    h1{
+                        font-size: 25px;
+                        padding-top: 10px;
+                        line-height: 2;
+                    }
+                }
+            }
+        }    
+        @media (max-width:570px) {
+            .container{
+                .head-menu{
+                    h1{
+                        font-size: 15px;
+                        padding-top: 25px;
+                        line-height: 1;
+                        padding-bottom: 15px;
+                        }
+                    }
+                }
+            
+                .info{
+                    padding: 30px 15px;
+                }
+                .head-menu{
+                    .flexTwo{
+                        .toggle{
+                            border-radius: 50%;
+                            width: 0px;
+                            background-color: transparent;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }  
+                .statices{
+                    .grid-3{
+                        grid-template-columns: 1fr;
+                        div{
+                            &::after{
+                                position: absolute;
+                                bottom: 0px;
+                                right: 50%;
+                                top: 70%;
+                                left: 50%;
+                                transform: rotate(90deg);
+                            }
+                        }
+                        .nophoneafter::after{
+                            height: 0px;
+                        }
+                        .nopcafter::after{
+                            height: 60%;
+                        }
+                    }
+                } 
+            }  
+        }        
     @media (max-width: 430px) {
         .success-modal {
             width: 60%;
@@ -508,30 +570,10 @@ body {
                     }
                 }
             } 
-            .statices{
-                .grid-3{
-                    grid-template-columns: 1fr;
-                    div{
-                        &::after{
-                            position: absolute;
-                            bottom: 0px;
-                            right: 50%;
-                            top: 70%;
-                            left: 50%;
-                            transform: rotate(90deg);
-                        }
-                    }
-                    .nophoneafter::after{
-                        height: 0px;
-                    }
-                    .nopcafter::after{
-                        height: 60%;
-                    }
-                }
-            } 
         }  
     }
 }
+
 
 // @media (max-width: 768px) {
 //     body{

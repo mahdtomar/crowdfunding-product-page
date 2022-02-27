@@ -596,8 +596,52 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 770px) {
-  body .success-modal {
-    width: 60%;
+  body .container {
+    width: 95%;
+  }
+  body .container .success-modal {
+    width: 85%;
+  }
+  body .container .head-menu h1 {
+    font-size: 25px;
+    padding-top: 10px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 570px) {
+  body .container .head-menu h1 {
+    font-size: 15px;
+  }
+  body .container .info {
+    padding: 30px 15px;
+  }
+  body .container .head-menu .flexTwo .toggle {
+    border-radius: 50%;
+    width: 0px;
+    background-color: transparent;
+  }
+  body .container .head-menu .flexTwo .toggle span {
+    display: none;
+  }
+  body .container .statices .grid-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container .statices .grid-3 div::after {
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  body .container .statices .grid-3 .nophoneafter::after {
+    height: 0px;
+  }
+  body .container .statices .grid-3 .nopcafter::after {
+    height: 60%;
   }
 }
 
@@ -640,25 +684,6 @@ body .success-modal button:hover {
   body .container .info .tiles .tile .opitions button {
     width: 130px;
     padding: 15px;
-  }
-  body .container .statices .grid-3 {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  body .container .statices .grid-3 div::after {
-    position: absolute;
-    bottom: 0px;
-    right: 50%;
-    top: 70%;
-    left: 50%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  body .container .statices .grid-3 .nophoneafter::after {
-    height: 0px;
-  }
-  body .container .statices .grid-3 .nopcafter::after {
-    height: 60%;
   }
 }
 /*# sourceMappingURL=main-page.css.map */

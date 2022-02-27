@@ -87,3 +87,18 @@ function Close_thanks(){
 }
 backScreen.addEventListener('click', Close_thanks)
 backScreen.addEventListener('click', closemenu)
+
+let bookMarkText = document.createTextNode("Bookmark")
+let bookMark = document.querySelector(".toggle")
+// bookMark.appendChild(bookMarkText);
+// if(window.innerWidth<="600px"){
+//   console.log("small body")
+// }else{
+//   console.log("big body")
+// }
+// if (bookMark.offsetWidth === 40){
+//   bookMark.removeChild(bookMarkText)
+// }
+// if (bookMark.offsetWidth !=40){
+//   bookMark.appendChild(bookMarkText)
+// }

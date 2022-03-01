@@ -120,6 +120,8 @@ body .container .head-menu .flexTwo button {
   width: 180px;
   background-color: #3cb4ac;
   z-index: 2;
+  /* min-width: 135px; */
+  white-space: nowrap;
 }
 
 body .container .head-menu .flexTwo button:hover {
@@ -596,11 +598,11 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 770px) {
+  body .success-modal {
+    width: 70%;
+  }
   body .container {
     width: 95%;
-  }
-  body .container .success-modal {
-    width: 85%;
   }
   body .container .head-menu h1 {
     font-size: 25px;
@@ -610,8 +612,14 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 570px) {
+  body .success-modal {
+    width: 85%;
+  }
   body .container .head-menu h1 {
     font-size: 15px;
+    padding-top: 25px;
+    line-height: 1;
+    padding-bottom: 15px;
   }
   body .container .info {
     padding: 30px 15px;
@@ -647,10 +655,40 @@ body .success-modal button:hover {
 
 @media (max-width: 430px) {
   body .success-modal {
-    width: 60%;
+    width: 95%;
+  }
+  body .success-modal span {
+    margin: 10px;
+  }
+  body .newOffer {
+    padding: 10px;
+    width: 95%;
+  }
+  body .offers div {
+    padding: 10px;
+  }
+  body .offers div .opitions p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .offers div .flex-box span {
+    white-space: nowrap;
+  }
+  body .offers div label span {
+    font-size: smaller;
+  }
+  body .offers div label span .colored-span {
+    display: block;
+    font-size: smaller;
+    padding-left: 15px;
   }
   body .container {
     width: 95%;
+  }
+  body .container section {
+    padding: 0px 5px;
   }
   body .container .info .tiles {
     padding: 0px;

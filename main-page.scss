@@ -142,11 +142,6 @@ body {
                         font-weight: bold;
                         display: block;
                     }
-                    // .no-after::after{
-                    //     content: "";
-                    //     height: 0px;
-                    //     width: 0px;
-                    // }
                 }
                 .nopcafter::after{
                     height: 0px;
@@ -470,11 +465,12 @@ body {
         }
     }
         @media (max-width: 770px) {
+            .success-modal {
+                    width: 70%;
+                }
             .container{
                 width: 95%;
-                .success-modal {
-                    width: 85%;
-                }
+                
                 .head-menu{
                     h1{
                         font-size: 25px;
@@ -485,6 +481,9 @@ body {
             }
         }    
         @media (max-width:570px) {
+            .success-modal {
+                width: 85%;
+            }
             .container{
                 .head-menu{
                     h1{
@@ -494,7 +493,7 @@ body {
                         padding-bottom: 15px;
                         }
                     }
-                }
+                
             
                 .info{
                     padding: 30px 15px;
@@ -533,46 +532,82 @@ body {
                     }
                 } 
             }  
-        }        
-    @media (max-width: 430px) {
-        .success-modal {
-            width: 60%;
         }
-        .container{
-            width: 95%;
-            .info{
-
-                .tiles{
-                    padding: 0px;
-                    .tile{
-                        header{
-                            flex-direction: column;
-                            padding-bottom: 20px;                             
-
-                        p,span{
-                            text-align: left;
-                            font-size: 20px;
-                            
-                        }
-                        p{
-                            padding-bottom: 0px;
-                        }
-                        }
+        @media (max-width: 430px) {
+            .success-modal {
+                width: 95%;
+                span{
+                    margin: 10px;
+                }
+            }
+                .newOffer{
+                    padding: 10px;
+                    width: 95%;
+                }
+                .offers{
+                    div{
+                        padding: 10px;
                         .opitions{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            button{
-                                width: 130px;
-                                padding: 15px;
+                            p{
+                                flex-direction: column;
+                            }
+                        }
+                        .flex-box{
+                            span{
+                                white-space: nowrap;
+                            }
+                        }
+                        label{
+                            span{
+                                font-size: smaller;
+                                .colored-span{
+                                    display: block;
+                                    font-size: smaller;
+                                    padding-left:15px ;
+                                }
                             }
                         }
                     }
                 }
-            } 
-        }  
-    }
-}
+                .container{
+                    section{
+                        padding: 0px 5px;
+                    }
+                    width: 95%;
+                    .info{
+        
+                        .tiles{
+                            padding: 0px;
+                            .tile{
+                                header{
+                                    flex-direction: column;
+                                    padding-bottom: 20px;                             
+        
+                                    p,span{
+                                        text-align: left;
+                                        font-size: 20px;
+                                        
+                                    }
+                                    p{
+                                        padding-bottom: 0px;
+                                    }
+                                }
+                                .opitions{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    button{
+                                        width: 130px;
+                                        padding: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }  
+            }
+}        
+
 
 
 // @media (max-width: 768px) {

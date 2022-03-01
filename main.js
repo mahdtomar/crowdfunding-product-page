@@ -102,3 +102,4 @@ let bookMark = document.querySelector(".toggle")
 // if (bookMark.offsetWidth !=40){
 //   bookMark.appendChild(bookMarkText)
 // }
+let burger = document.querySelector(".burger");

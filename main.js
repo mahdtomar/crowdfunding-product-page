@@ -103,3 +103,34 @@ let bookMark = document.querySelector(".toggle")
 //   bookMark.appendChild(bookMarkText)
 // }
 let burger = document.querySelector(".burger");
+let dropMenu = document.querySelector(".ul");
+let closeDiv = document.createElement("div");
+closeDiv.classList.add("hidden");
+closeDiv.classList.add("closeDiv");
+body.appendChild(closeDiv)
+closeDiv.addEventListener("click",()=>{
+  dropMenu.classList.remove("dropmenu")
+  closeDiv.classList.toggle("hidden")
+})
+// document.body.onclick = () =>{
+//   if (dropMenu.classList.contains("dropmenu")){
+//     dropMenu.classList.remove("dropmenu")
+//   }else{
+
+//   }
+// }
+const style = getComputedStyle(burger);
+function turnIntoCloseIcon(){
+  if (dropMenu.classList.contains("dropmenu")){
+    burger.innerHTML = '';
+    burger.innerHTML = `<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M2.404.782l11.314 11.314-2.122 2.122L.282 2.904z"/><path d="M.282 12.096L11.596.782l2.122 2.122L2.404 14.218z"/></g></svg>`
+  }
+}
+burger.onclick = () => {
+  if(getComputedStyle(burger).opacity == "0"){
+  }else{
+    dropMenu.classList.toggle("dropmenu")
+    closeDiv.classList.toggle("hidden");
+    turnIntoCloseIcon();
+  }
+}

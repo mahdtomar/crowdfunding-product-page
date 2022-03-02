@@ -641,11 +641,47 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 570px) {
-  body header ul {
+  body header {
+    z-index: 6;
+  }
+  body header nav .container ul {
     display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+  }
+  body header nav .container ul li {
+    display: block;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: left;
+  }
+  body header nav .container ul li a {
+    color: black;
+  }
+  body header nav .container ul.dropmenu {
+    display: block;
+  }
+  body header nav .container ul.dropmenu {
+    z-index: 15;
+  }
+  body header nav .container ul.dropmenu li:hover {
+    background-color: #d3d2d2;
+    z-index: 14;
+  }
+  body header nav .container .burger {
+    opacity: 1;
   }
   body .success-modal {
     width: 85%;
+  }
+  body .container .head-menu {
+    z-index: 7;
   }
   body .container .head-menu h1 {
     font-size: 15px;
@@ -755,5 +791,19 @@ body .success-modal button:hover {
     width: 130px;
     padding: 15px;
   }
+}
+
+body .closeDiv {
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  z-index: 3;
+}
+
+body .hidden {
+  z-index: -1;
 }
 /*# sourceMappingURL=main-page.css.map */

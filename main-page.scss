@@ -500,20 +500,58 @@ body {
         }    
         @media (max-width:570px) {
             header{
-                ul{
-                    display: none;
+                z-index: 6;
+                nav{
+                    .container{
+                        ul{
+                            display: none;
+                            position: absolute;
+                            top: 50px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            width: 70%;
+                            border-radius: 10px;
+                            li{
+                                display: block;
+                                padding: 20px;
+                                border-top: 1px solid black;
+                                text-align: left;
+                                a{
+                                    color: black;
+                                }
+                            }
+                        }
+                        ul.dropmenu{
+                            display: block;
+                        }
+                        ul.dropmenu{
+                            z-index: 15;
+                            li:hover{
+                                background-color: rgba($color: #d3d2d2, $alpha: 1.0);
+                                z-index: 14;
+                            }
+                        }
+                        .burger{
+                            opacity: 1;
+                            position: ;
+                        }
+                    }
                 }
             }
             .success-modal {
                 width: 85%;
             }
             .container{
+               
                 .head-menu{
+                    z-index: 7;
                     h1{
                         font-size: 15px;
                         padding-top: 25px;
                         line-height: 1;
                         padding-bottom: 15px;
+                        
                         }
                     }
                 
@@ -629,26 +667,16 @@ body {
                     } 
                 }  
             }
+        .closeDiv{
+            width: 100vh;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color:transparent ;
+            z-index: 3;
+        }
+        .hidden{
+            z-index: -1;
+        }
 }        
-
-
-
-// @media (max-width: 768px) {
-//     body{
-        
-//     }
-// }
-// @media (max-width: 425px) {
-//     body{
-//         .container{
-//             width: 95%;
-//             .statices{
-//                 .grid-3{
-//                     display: grid;
-//                     grid-template-columns: 1fr;
-//                     grid-template-rows: 1fr 1fr 1fr;
-//                 }
-//             }
-//         }
-//     }
-// }

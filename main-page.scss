@@ -331,10 +331,10 @@ body {
             input[type="radio"]:checked::before {
                 transform: scale(1);
             }
-            input[type="radio"].remove::before {
-                background-color: transparent;
-                transform: scale(0);
-            }
+            // input[type="radio"].remove::before {
+            //     background-color: transparent;
+            //     transform: scale(0);
+            // }
 
             label {
                 font-weight: bold;

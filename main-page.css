@@ -45,6 +45,11 @@ body > header nav .container .burger {
   cursor: default;
 }
 
+body > header nav .container .burger svg {
+  width: 30px;
+  height: 30px;
+}
+
 body > header nav .container img {
   position: relative;
 }

@@ -43,25 +43,6 @@ body > header nav .container .burger {
   height: 30px;
   background-color: transparent;
   cursor: default;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body > header nav .container .burger span {
-  width: 100%;
-  height: 6px;
-  background-color: white;
 }
 
 body > header nav .container img {
@@ -676,6 +657,9 @@ body .success-modal button:hover {
   }
   body header nav .container .burger {
     opacity: 1;
+    position: absolute;
+    top: 20px;
+    right: 30px;
   }
   body .success-modal {
     width: 85%;

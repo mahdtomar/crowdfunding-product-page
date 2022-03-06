@@ -52,6 +52,8 @@ body > header nav .container .burger svg {
 
 body > header nav .container img {
   position: relative;
+  width: 160px;
+  height: 25px;
 }
 
 body > header nav .container ul {
@@ -607,6 +609,10 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 770px) {
+  body header {
+    background-image: url(images/image-hero-mobile.jpg);
+    background-size: cover;
+  }
   body .success-modal {
     width: 70%;
   }

@@ -33,6 +33,8 @@ body {
                 background-color: transparent;
                 img {
                     position: relative;
+                    width: 160px;
+                    height: 25px;
                 }
                 position: absolute;
                 max-width: 1440px;
@@ -478,6 +480,10 @@ body {
         }
     }
         @media (max-width: 770px) {
+            header{
+                background-image: url(images/image-hero-mobile.jpg);
+                background-size: cover;
+            }
             .success-modal {
                     width: 70%;
                 }

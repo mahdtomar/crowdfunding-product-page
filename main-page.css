@@ -609,7 +609,7 @@ body .success-modal button:hover {
 }
 
 @media (max-width: 770px) {
-  body header {
+  body > .header {
     background-image: url(images/image-hero-mobile.jpg);
     background-size: cover;
   }

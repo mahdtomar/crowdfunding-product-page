@@ -480,7 +480,7 @@ body {
         }
     }
         @media (max-width: 770px) {
-            header{
+            &>.header{
                 background-image: url(images/image-hero-mobile.jpg);
                 background-size: cover;
             }
